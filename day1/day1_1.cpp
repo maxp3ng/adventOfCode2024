@@ -1,6 +1,6 @@
 // https://adventofcode.com/2024/day/1
 // solved 12/1/24
-// comments: took some time to get used to cpp and learn a few things, but going well so far
+// comments: took some time to get used to cpp again and learn a few things, but going well so far
 
 #include <bits/stdc++.h>
 #include "../headers/quicksort.h"
