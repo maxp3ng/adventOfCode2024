@@ -1,6 +1,6 @@
 // https://adventofcode.com/2024/day/1
-// unsolved
-// comments:
+// solved 12/1/24
+// comments: hoping for a good aoc run this year, hopefully first completion!
 
 #include <bits/stdc++.h>
 #include "../headers/quicksort.h"

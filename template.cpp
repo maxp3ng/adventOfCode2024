@@ -1,8 +1,9 @@
-//
+// 
 // unsolved
 // comments:
 
 #include <bits/stdc++.h>
+#include "../headers/quicksort.h"
 
 using namespace std;
 using ll = long long;
@@ -12,6 +13,7 @@ using db = long double;
 using vll = vector<ll>;
 using vi = vector<int>;
 using pii = pair<int, int>;
+using pll = pair<ll, ll>;
 
 #define endl "\n";
 #define F first
@@ -25,19 +27,21 @@ using pii = pair<int, int>;
 #define Out(s)  cout << s << '\n';
 
 void solve(){
-    ll n, m;
-
-
+    ll n = 0;
+    vll v;
+   
+    ll next1;
+    while(cin >> next1){ 
+	    if (next1 == 0) {break;}
+	    v.insert(next1);
+    }
+    
+    cout << n;
 }
 
 int main(){
     ios::sync_with_stdio(0);cin.tie(0); cout.tie(0);
-
-    ll T = 1; cin >> T;
-    while(T --){
-        solve();
-    }
-
+    solve();
     return 0;
 }
 
