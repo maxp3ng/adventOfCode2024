@@ -1,6 +1,6 @@
 // https://adventofcode.com/2024/day/3
-// solved 12/3/24 
-// comments: hit a BIG bump with changing to file input that ended up not even being the problem haha... should spend more time with cpp
+// solved 12/3/24
+// comments: so it turns out the int j = i did come back to bite me in the ass after all.... great
 
 #include "../headers/all.hpp"
 #include <cctype>
@@ -8,13 +8,23 @@
 
 ll solve(){
     ifstream inFile("in.txt"); 
+
     ll ret = 0;
 
     str next;
+    bool on = true;
     while(getline(inFile,next)){ 
-      for (int i=4; i<next.size(); i++){
-        if (next.substr(i-4,4) == "mul("){
-          int j = i;
+      for (int i=0; i<next.size()-4; i++){
+        if (next.substr(i,4) == "do()"){
+          on = true;
+          continue;
+        }
+        if (next.substr(i,7) == "don't()"){
+          on = false;
+          continue;
+        }
+        if (next.substr(i,4) == "mul(" && on){
+          int j = i+4;
           str firstNum = "";
           while(isdigit(next[j])){
             firstNum += next[j];
