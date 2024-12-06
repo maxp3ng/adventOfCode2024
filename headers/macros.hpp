@@ -26,3 +26,9 @@ inline void setupIO() {
     cin.tie(0); 
     cout.tie(0);
 }
+
+template<typename T>
+inline bool contains(vector<T>& v, ll n){
+    return (find(v.begin(), v.end(), n) != v.end());    
+}
+   
