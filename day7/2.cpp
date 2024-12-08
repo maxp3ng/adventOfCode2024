@@ -1,6 +1,6 @@
 // https://adventofcode.com/2024/day/7
-// 
-// comments: 
+// solved 12/7/24
+// comments: need to figure out what was going on with ull
 
 #include "../headers/all.hpp"
 #include <sstream>

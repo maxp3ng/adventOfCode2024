@@ -1,5 +1,5 @@
 // https://adventofcode.com/2024/day/7
-// 
+// solved 12/7/24
 // comments: 
 
 #include "../headers/all.hpp"
